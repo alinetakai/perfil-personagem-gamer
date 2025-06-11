@@ -1,0 +1,75 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2f;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #2e2e3f;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      width: 320px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #00ffd0;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    input[type="file"] {
+      margin-top: 5px;
+      color: #fff;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #00ffd0;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #00ccaa;
+    }
+
+    #avatarPreview {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #00ffd0;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    #avatarPreview:hover {
+      transform: scale(1.05);
+    }
+
+    #arquivoSelecionado {
+      font-size: 0.9em;
+      margin-top: 5px;
+      color: #ccc;
+    }

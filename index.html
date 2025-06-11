@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil Gamer</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎮 Crie seu personagem gamer</h2>
+
+    <form id="formPersonagem">
+      <!-- Avatar como imagem clicável -->
+      <label for="uploadSimbolo">Seu Avatar:</label>
+      <img id="avatarPreview" src="avatar.png" alt="Avatar">
+
+      <input type="file" id="uploadSimbolo" accept="image/*">
+
+      <p id="arquivoSelecionado"></p>
+
+      <!-- Força com range -->
+      <label>Força: <span id="forcaValor">50</span></label>
+      <input type="range" id="forca" min="0" max="100" value="50">
+
+      <!-- Campo oculto -->
+      <input type="hidden" id="codigoSecreto" value="GAMER123">
+
+      <input type="image" src="botao.png" width="40" alt="Enviar perfil" title="Salvar perfil">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
